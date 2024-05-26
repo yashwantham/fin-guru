@@ -11,9 +11,10 @@ export function DataProvider({ children }) {
   const [contentState, setContentState] = useState(DEFAULT);
   const [searchedTerm, setSearchedTerm] = useState("");
   const [searchedQueries, setSearchedQueries] = useState([
-    "What is Mutual Fund?",
-    "Difference between savings and current account",
-    "What is SIP?",
+    "How Do I Save More Money?",
+    "How Do I Improve My Credit Score?",
+    "How Much Do I Need to Save for Retirement?",
+    "Are Online Banks Safe?",
   ]);
   const [detailResponse, setDetailResponse] = useState([]);
   const [selectedResponse, setSelectedResponse] = useState([]);
