@@ -35,7 +35,8 @@ function Home() {
       return [...newList];
     });
     const searchResult = detailResponse.find(
-      ({ Prompt, Response }) => searchedTerm === Prompt
+      ({ Prompt, Response }) =>
+        searchedTerm.toLowerCase() === Prompt.toLowerCase()
     );
     if (searchResult !== undefined) {
       console.log("searchResult", searchResult);
