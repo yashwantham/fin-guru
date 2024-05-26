@@ -29,6 +29,7 @@
 
 .recent-container {
     margin-top: 4rem;
+    /* overflow-y: scroll; */
 }
 .recent {
     font-size: 1.3rem;

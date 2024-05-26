@@ -16,6 +16,8 @@ function Home() {
     setSearchedQueries,
     searchedTerm,
     setSearchedTerm,
+    selectedResponse,
+    setSelectedResponse,
   } = useContext(DataContext);
 
   //   const [searchedTerm, setSearchedTerm] = useState("");
@@ -32,6 +34,11 @@ function Home() {
       newList = newList.filter((item, ind) => newList.indexOf(item) === ind);
       return [...newList];
     });
+    const searchResult = detailResponse.find(
+      ({ Prompt, Response }) => searchedTerm === Prompt
+    );
+    console.log("searchResult", searchResult);
+    setSelectedResponse(() => searchResult);
   }
 
   return (
@@ -48,10 +55,7 @@ function Home() {
         )}
         {contentState === DISPLAYRESPONSE && (
           <div className="content-container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            doloribus quis architecto, voluptate quae autem assumenda laboriosam
-            eligendi nemo vero neque pariatur porro nesciunt dicta libero
-            sapiente dolorem earum! Adipisci.
+            <p>{selectedResponse?.Response}</p>
           </div>
         )}
         <div className="input-send-container">
