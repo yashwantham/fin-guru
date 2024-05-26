@@ -1,0 +1,47 @@
+.history-tab-container {
+    text-align: left;
+    background-color: #F0F4F9;
+    box-sizing: border-box;
+    height: 100vh;
+    /* border: 2px solid rebeccapurple; */
+    width: 18%;
+    padding: 1.8rem 1rem 1rem 1rem;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.new-chat-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    font-family: "Google Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.recent-container {
+    margin-top: 4rem;
+}
+.recent {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.searched-queries {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.one-history-item {
+    background-color: #ffffff;
+    padding: 10px 10px 10px 14px;
+    margin-top: 8px;
+    border-radius: 25px;
+}
